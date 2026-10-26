@@ -1,0 +1,260 @@
+.page-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.page-heading h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.page-heading p,
+.project-details p,
+.project-detail-panel p {
+  color: #777168;
+  line-height: 1.6;
+}
+
+.add-project-form,
+.project-detail-panel {
+  margin: 18px 0;
+  padding: 18px;
+  border: 1px solid #e6e2da;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.add-project-form h2,
+.project-detail-panel h2 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.add-project-form label {
+  display: block;
+  margin-bottom: 12px;
+  color: #56534c;
+  font-size: 12px;
+}
+
+.add-project-form input,
+.add-project-form textarea,
+.add-project-form select {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 9px;
+  border: 1px solid #d9d5cd;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.add-project-form .field-row {
+  margin-top: 14px;
+}
+
+.simple-button {
+  margin: 8px 8px 0 0;
+  padding: 8px 10px;
+  border: 1px solid #d9d5cd;
+  border-radius: 4px;
+  background: #fff;
+  color: #56534c;
+}
+
+.portfolio-template-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 8px;
+  color: #56534c;
+  font-size: 11px;
+}
+
+.portfolio-template-picker select {
+  padding: 7px;
+  border: 1px solid #d9d5cd;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.github-import {
+  margin: 20px 0;
+  padding: 16px;
+  border: 1px solid #e6e2da;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.github-import h2 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.github-import > p,
+.github-repository p {
+  color: #777168;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.github-import label {
+  display: block;
+  margin-bottom: 10px;
+  color: #56534c;
+  font-size: 11px;
+}
+
+.github-import input {
+  display: block;
+  width: 100%;
+  max-width: 340px;
+  margin-top: 5px;
+  padding: 9px;
+  border: 1px solid #d9d5cd;
+  border-radius: 4px;
+}
+
+.github-message {
+  color: #8c4942;
+  font-size: 11px;
+}
+
+.github-repository {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 0;
+  border-top: 1px solid #e6e2da;
+}
+
+.github-repository h3 {
+  margin: 0;
+  font-size: 13px;
+}
+
+.github-repository p {
+  margin: 5px 0;
+}
+
+.github-repository small {
+  color: #777168;
+}
+
+.github-import button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-card {
+  width: 100%;
+  padding: 0;
+  border: 1px solid #e6e2da;
+  border-radius: 6px;
+  background: #fff;
+  color: #292724;
+  text-align: left;
+  cursor: pointer;
+}
+
+.project-details {
+  padding: 16px;
+}
+
+.portfolio-template-list {
+  grid-template-columns: 1fr;
+}
+
+.portfolio-template-list .project-details {
+  display: grid;
+  grid-template-columns: 130px 190px minmax(0, 1fr);
+  align-items: start;
+  gap: 8px 16px;
+}
+
+.portfolio-template-list .project-details h2,
+.portfolio-template-list .project-details > p {
+  margin: 0;
+}
+
+.portfolio-template-list .project-details > p:last-of-type {
+  min-height: 0;
+}
+
+.portfolio-template-list .project-details .tag-list,
+.portfolio-template-list .project-details > span {
+  grid-column: 1 / -1;
+}
+
+.portfolio-template-compact {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.portfolio-template-compact .project-details {
+  padding: 10px;
+}
+
+.portfolio-template-compact .project-details h2 {
+  font-size: 13px;
+}
+
+.portfolio-template-compact .project-details > p:last-of-type {
+  min-height: 0;
+  font-size: 10px;
+}
+
+.project-meta {
+  margin: 0;
+  color: #777168;
+  font-size: 11px;
+}
+
+.project-details h2 {
+  font-size: 16px;
+}
+
+.project-details > p:last-of-type {
+  overflow: hidden;
+  min-height: 42px;
+}
+
+.project-details > span {
+  color: #526b59;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+@media (max-width: 780px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio-template-compact {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .portfolio-template-list .project-details {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 540px) {
+  .page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}

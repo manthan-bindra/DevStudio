@@ -1,0 +1,101 @@
+.ats-checker {
+  margin-top: 24px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #eeece7;
+  border-radius: 10px;
+}
+
+.ats-checker-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.ats-checker h3 {
+  margin: 0 0 6px;
+  color: #48453f;
+  font-size: 14px;
+}
+
+.ats-checker p {
+  color: #777168;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.ats-job-picker {
+  display: block;
+  margin-top: 18px;
+  color: #706c63;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ats-job-picker select {
+  display: block;
+  width: 100%;
+  margin-top: 7px;
+  padding: 9px;
+  border: 1px solid #e9e6e0;
+  border-radius: 6px;
+  background: #fdfcfa;
+  color: #48453f;
+}
+
+.ats-job-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 12px 0;
+  color: #777168;
+  font-size: 10px;
+}
+
+.ats-job-info a,
+.ats-credit a {
+  color: #52705c;
+}
+
+.ats-check-button {
+  margin-top: 8px;
+  background: #e9eee8;
+  color: #405642;
+}
+
+.ats-message {
+  margin: 15px 0 0;
+}
+
+.ats-results {
+  margin-top: 16px;
+  padding: 14px;
+  background: #f8f7f3;
+  border-radius: 7px;
+}
+
+.ats-results h4 {
+  margin: 0 0 8px;
+  color: #48453f;
+  font-size: 15px;
+}
+
+.ats-results p {
+  margin: 7px 0;
+}
+
+.ats-results small,
+.ats-credit {
+  display: block;
+  margin-top: 12px;
+  color: #918c83;
+  font-size: 9px;
+}
+
+@media (max-width: 540px) {
+  .ats-checker-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
